@@ -8,13 +8,13 @@ Back end for an e-commerce site using a working Express.js API and configured to
 
 ## Instructions
 Installation
-*npm install dotenv
-*npm install mysql2 
-*npm install express
-*npm install sequelize
+* npm install dotenv
+* npm install mysql2 
+* npm install express
+* npm install sequelize
 
 Database
-*schema.sql
+* schema.sql
 
 Use 'npm run seed' to seed data
 Use 'npm start' to run
