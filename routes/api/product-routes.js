@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
+const { sequelize } = require('../../models/Product');
 
 // The `/api/products` endpoint
 
@@ -22,7 +23,6 @@ router.get('/', (req, res) => {
       {
         model: Tag, 
         attributes: ['tag_name'],
-        //through: ProductTag
       }
     ]
   })
@@ -48,8 +48,7 @@ router.get('/:id', (req, res) => {
       },
       {
         model: Tag, 
-        attributes: ['tag_name'],
-        //through: ProductTag
+        attributes: ['tag_name']
       }
     ]
   })
